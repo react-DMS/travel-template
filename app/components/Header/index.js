@@ -47,7 +47,7 @@ export default function Header(props) {
           <TouchableOpacity
             style={[styles.contentLeft, styleLeft]}
             onPress={onPressLeft}>
-            {renderLeft()}
+            {renderLeft && renderLeft()}
           </TouchableOpacity>
         </View>
         <View style={[styles.contentCenter, styleCenter]}>
@@ -64,12 +64,12 @@ export default function Header(props) {
           <TouchableOpacity
             style={[styles.contentRightSecond, styleRightSecond]}
             onPress={onPressRightSecond}>
-            {renderRightSecond()}
+            {renderRightSecond && renderRightSecond()}
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.contentRight, styleRight]}
             onPress={onPressRight}>
-            {renderRight()}
+            {renderRight && renderRight()}
           </TouchableOpacity>
         </View>
       </View>
